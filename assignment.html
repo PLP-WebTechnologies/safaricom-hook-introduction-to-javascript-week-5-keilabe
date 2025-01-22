@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Javascript Assignment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script>
+            window.onload = function() {
+                // Change the text of the <h1> element
+                document.querySelector('h1').textContent = 'JavaScript in Action!';
+            
+                // Add a new <p> inside the <div> with id "dynamic-content"
+                var newParagraph = document.createElement('p');
+                newParagraph.textContent = 'This content was added dynamically using JavaScript.';
+                document.getElementById('dynamic-content').appendChild(newParagraph);
+            };
+        </script>
+    </head>
+    <body>
+      <h1 id="greeting">Welcome!</h1>
+      <input type="text" id="nameInput" placeholder="Enter your name">
+      <button onclick="showGreeting()">Greet Me</button>
+
+      <h1 id="eligibility">Find Out if You Can Vote</h1>
+      <button onclick="checkVotingEligibility()">Check Eligibility</button>
+
+      <h1>Numbers from 1 to 10</h1>
+      <ol id="numberList"></ol>
+
+      <h1>JavaScript Assignment</h1>
+    <p>Learning JavaScript is fun!</p>
+    <div id="dynamic-content"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
